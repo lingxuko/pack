@@ -7,14 +7,14 @@
 SolveSylvester(A, B, C)
 }
 \arguments{
-\item{A}{A square Matrix,}
+\item{A}{A square Matrix or a real number,}
 
-\item{B}{A square Matrix.}
+\item{B}{A square Matrix or a real number.}
 
-\item{C}{right hand side Matrix.}
+\item{C}{A Matrix fits certain conditions.}
 }
 \value{
-A solve of \code{A} \code{B} \code{C}
+A solve of \code{AX + XB = C}, which is a Matrix.
 }
 \description{
 Function used to solve Sylvester equation AX + XB = C
@@ -24,4 +24,7 @@ SolveSylvester(matrix(c(1,0,-1,2,1,0,0,0,-1),3,3,byrow = TRUE),
 matrix(c(2,1,0,0),2,2,byrow = TRUE),
 matrix(c(2,2,1,1,1,1),3,2))
 
+SolveSylvester(matrix(c(1,0,-1,2,1,0,0,0,-1),3,3,byrow = TRUE),
+2,
+matrix(c(2,2,1,1,1,1,3,4),3,3))
 }

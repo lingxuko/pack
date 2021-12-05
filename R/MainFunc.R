@@ -4,22 +4,25 @@
 #' Function used to solve Sylvester equation AX + XB = C
 #'
 #'
-#' @param A A square Matrix,
-#' @param B A square Matrix.
-#' @param C right hand side Matrix.
+#' @param A A square Matrix or a real number,
+#' @param B A square Matrix or a real number.
+#' @param C A Matrix fits certain conditions.
 #' @import Matrix
 #' @import maotai
 #' @import microbenchmark
 #' @importFrom methods as
 #'
 #'
-#' @return A solve of \code{A} \code{B} \code{C}
+#' @return A solve of \code{AX + XB = C}, which is a Matrix.
 #'
 #' @examples
 #' SolveSylvester(matrix(c(1,0,-1,2,1,0,0,0,-1),3,3,byrow = TRUE),
 #' matrix(c(2,1,0,0),2,2,byrow = TRUE),
 #' matrix(c(2,2,1,1,1,1),3,2))
 #'
+#' SolveSylvester(matrix(c(1,0,-1,2,1,0,0,0,-1),3,3,byrow = TRUE),
+#' 2,
+#' matrix(c(2,2,1,1,1,1,3,4),3,3))
 #' @export
 
 #Main function
