@@ -8,7 +8,7 @@
 #' @param B A square Matrix or a real number.
 #' @param C A Matrix fits certain conditions.
 #' @import Matrix
-#' @import maotai
+#'
 #' @import microbenchmark
 #' @importFrom methods as
 #'

@@ -71,10 +71,10 @@ SolveSylvester(A,B,C)
 ```{r}
 set.seed(123)
 A <- matrix(rnorm(9,0,1),3,3)
-B <- matrix(rnorm(9,0,1),3,3)
+B <- 0
 C <- matrix(rnorm(9,0,1),3,3)
-all.equal.numeric(as.vector(maotai::sylvester(A,B,C)),as.vector(SolveSylvester(A,B,C)))
-microbenchmark(maotai::sylvester(A,B,C),SolveSylvester(A,B,C))
+all.equal.numeric(as.vector(solve(A,C)),as.vector(SolveSylvester(A,B,C)))
+microbenchmark(solve(A,C),SolveSylvester(A,B,C))
 #C++ sloves matrix equations faster than R 
 ```
 
