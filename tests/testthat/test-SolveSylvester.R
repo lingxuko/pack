@@ -44,6 +44,13 @@ test_that("compare matrices",{
   y <- matrix(c(1/3,0,0,1/3),2,2,byrow = TRUE)
   expect_equal(as.vector(x), as.vector(y), tolerance=1e-10)})
 
+test_that("compare matrices",{
+  x <- SolveSylvester(0,
+                      matrix(c(1,0,0,1),2,2,byrow = TRUE),
+                      matrix(c(1,0,0,1),2,2))
+  y <- matrix(c(1,0,0,1),2,2,byrow = TRUE)
+  expect_equal(as.vector(x), as.vector(y), tolerance=1e-10)})
+
 
 test_that("compare matrices",{
   x <- SolveSylvester(matrix(c(-1,0,0,-1),2,2,byrow = TRUE),
