@@ -1,7 +1,11 @@
 
 #'SolveSylvester
 #'
-#' Function used to solve Sylvester equation AX + XB = C
+#' Function used to solve Sylvester equation AX + XB = C.
+#' This Package contains a function called \code{Solvesylvester()}
+#' This function can be used to solve standard sylvester equations like AX + XB = C, where A, B, C are all square matrices with same dimensions.
+#' Also, this function allows input matrices and real numbers, if real number is 0, it will degenerate to simple matrix equation.
+#' Input can be \code{(Matrix, number, Matrix)} or \code{(number, Matrix, Matrix)} or \code{(Matrix, Matrix, Matrix)}, other input are not supported.
 #'
 #'
 #' @param A A square Matrix or a real number,
