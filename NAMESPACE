@@ -2,3 +2,4 @@
 
 export(SolveSylvester)
 import(Matrix)
+importFrom(methods,as)

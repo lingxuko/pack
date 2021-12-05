@@ -8,6 +8,8 @@
 #' @param B A square Matrix.
 #' @param C right hand side Matrix.
 #' @import Matrix
+#' @importFrom methods as
+#'
 #'
 #' @return A solve of \code{A} \code{B} \code{C}
 #'
