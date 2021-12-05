@@ -8,6 +8,8 @@
 #' @param B A square Matrix.
 #' @param C right hand side Matrix.
 #' @import Matrix
+#' @import maotai
+#' @import microbenchmark
 #' @importFrom methods as
 #'
 #'

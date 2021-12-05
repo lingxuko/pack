@@ -12,8 +12,11 @@ Import: Matrix,
         testthat,
         rmarkdown,
         knitr,
+        microbenchmark,
+        maotai,
+        cluster,
         methods
-Depends: Matrix, methods
+Depends: Matrix, methods,maotai,microbenchmark
 LazyData: true
 RoxygenNote: 7.1.2
 Suggests: 
