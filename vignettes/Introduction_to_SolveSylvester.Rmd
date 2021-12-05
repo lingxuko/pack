@@ -13,6 +13,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+options(rgl.useNULL = TRUE)
 library(SolSyl)
 library(Matrix)
 library(knitr)
